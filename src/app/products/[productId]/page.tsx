@@ -4,7 +4,7 @@ const ProductDetails = async ({
   params: Promise<{ productId: string }>;
 }) => {
   const productId = (await params).productId;
-  return <h1>Product details for {productId}</h1>;
+  return <h1>Product details for product {productId}</h1>;
 };
 
 export default ProductDetails;
